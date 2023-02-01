@@ -6,7 +6,7 @@
     1. - Staged new file README : Index 에서 해당 파일을 추적하는 중이다.
 4. git commit -m"": index에서 추적하는 내역을 저장소에 저장하는 명령어
 	- nothing to commit, working tree clean : 작업 이력과 저장소 이력이 같다.
-5. README를 수정 후 저장
+5. README를 수정 후 저장 : Untrated midified
 	-> modified : README : 작업 이력과 저장소 이력이 다르다. -> 저장해라 라는 뜻
 6. 추적
-7. 저장("리드미 수정 후 저장")   
+7. 저장("리드미 수정 후 저장")
