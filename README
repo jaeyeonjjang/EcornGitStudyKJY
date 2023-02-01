@@ -36,6 +36,6 @@ git log -[숫자]
 
 branch?? : 기존의 작업에서 다른 작업을 하고 싶을 때 생성하는 가지
 (master, main) branch : git init 시 최초로 생성되는 가지로 배포 또는 병합하는 메인 가지 (프로젝트)로 절대 삭제하지 않는다 (main은 github에서 권장하는 이름)
-git branch <가지이름> : 새로운 branch 를 생성하는 명령어
-git checkout <가지이름> : 해당 가지를 선택해서 작업하겠다(HEAD를 변경)는 명령어
-git checkout -b <가지이름> : 가지를 생성하면서 HEAD를 변경하는 명령어
+git branch 가지이름 : 새로운 branch 를 생성하는 명령어
+git checkout 가지이름 : 해당 가지를 선택해서 작업하겠다(HEAD를 변경)는 명령어
+git checkout -b 가지이름 : 가지를 생성하면서 HEAD를 변경하는 명령어
