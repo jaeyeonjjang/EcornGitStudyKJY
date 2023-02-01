@@ -14,6 +14,28 @@
 ** 파일 생성 후 저장
 untracked -> staged -> uncommitted (clean work directory)
 ** 파일 수정 후 저장
-untracked(modified) -> staged(modified) -> committed (clean work directory)
+modified -> staged -> unmodified (committed) (clean work directory)
 
+git init : git 저장소 생성 (.git을 포함하는 하위 폴더는 모두 저장소에서 관리)
 git diff / git diff [파일명]:  작업내역과 저장소의 이력을 비교해서 보여주는 명령어 
+git diff --staged : 추적하는(index) 내역과 저장소의 이력을 비교해서 보여주는 명령어
+git add . 또는 *또는[파일명] : 작업 내역을 index 에서 추적하는 명령어 (.: 하위 폴더와 숨김 폴더를 포함한 모든 파일,  * : 이전에 추가한적이 있었던 모든 파일(새로운 파일제외))
+git comm -m : index에서 추적하는 내역을 저장소에 저장하는 명령어
+git comm -a -m : git add *  + git commit -m"" : 추적과 저장이 합쳐진 명령어  (새로운 파일은 제외하고 저장하는거라서 새파일은 이거 안먹힘)
+git reset HEAD <file> : 추적하는 파일을 추적하지 않는 상태로 변경
+.gitignore : 파일을 작성하면 index에서 감시하지않을 파일이나 폴더를 추가할 수 있다. (컴퓨터나 편집기 설정 파일ㅇ르 제외한다.  또는 git 프로젝트 안에 다른 Git 프로젝트가 있을 때
+)
+git commit --amend : 커밋의 멘트를 변경하고 싶을 때 (잘 사용하지 않음)
+git checkout --. or<파일명> : 작업 내역에 문제가 있을 때 마지막에 저장한 내용으로 초기화하는 명령어 (작업내역 취소. 생각보다 많이 사용)
+
+git log : 커밋이력을 보는 명렁어
+git log -p :
+git log --pretty :
+git log -[숫자]
+....등등
+
+branch?? : 기존의 작업에서 다른 작업을 하고 싶을 때 생성하는 가지
+(master, main) branch : git init 시 최초로 생성되는 가지로 배포 또는 병합하는 메인 가지 (프로젝트)로 절대 삭제하지 않는다 (main은 github에서 권장하는 이름)
+git branch <가지이름> : 새로운 branch 를 생성하는 명령어
+git checkout <가지이름> : 해당 가지를 선택해서 작업하겠다(HEAD를 변경)는 명령어
+git checkout -b <가지이름> : 가지를 생성하면서 HEAD를 변경하는 명령어
