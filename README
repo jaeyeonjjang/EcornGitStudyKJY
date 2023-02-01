@@ -8,5 +8,12 @@
 	- nothing to commit, working tree clean : 작업 이력과 저장소 이력이 같다.
 5. README를 수정 후 저장 : Untrated midified
 	-> modified : README : 작업 이력과 저장소 이력이 다르다. -> 저장해라 라는 뜻
-6. 추적
-7. 저장("리드미 수정 후 저장")
+6. git add README : Staged modified : README
+7. git commit -m "README 수정 후 저장" : working tree clean
+
+** 파일 생성 후 저장
+untracked -> staged -> uncommitted (clean work directory)
+** 파일 수정 후 저장
+untracked(modified) -> staged(modified) -> committed (clean work directory)
+
+git diff / git diff [파일명]:  작업내역과 저장소의 이력을 비교해서 보여주는 명령어 
