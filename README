@@ -1,1 +1,12 @@
 깃허브 스터디 프로젝트
+1. READEME 파일 생성
+2. git status : 상태를 확인하는 명령어
+    1. - Untracked 저장소에서 참조하지 않은 파일
+3. git add README : 해당 파일을 staging Area 영역(Index)에 추적하는 명령어
+    1. - Staged new file README : Index 에서 해당 파일을 추적하는 중이다.
+4. git commit -m"": index에서 추적하는 내역을 저장소에 저장하는 명령어
+	- nothing to commit, working tree clean : 작업 이력과 저장소 이력이 같다.
+5. README를 수정 후 저장
+	-> modified : README : 작업 이력과 저장소 이력이 다르다. -> 저장해라 라는 뜻
+6. 추적
+7. 저장("리드미 수정 후 저장")   
